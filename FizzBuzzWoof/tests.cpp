@@ -24,3 +24,14 @@ TEST_CASE("A number is FizzBuzz if divisible by 3 & 5"){
     REQUIRE(isDivisible(30) == "FizzBuzz");
     REQUIRE(isDivisible(60) == "FizzBuzz");
 }
+
+TEST_CASE("A number is FizzWoof if divisible by 3 & 7"){
+    REQUIRE(isDivisible(21) == "FizzWoof");
+    REQUIRE(isDivisible(42) == "FizzWoof");
+    REQUIRE(isDivisible(63) == "FizzWoof");
+}
+
+TEST_CASE("A number is BuzzWoof if divisible by 5 & 7"){
+    REQUIRE(isDivisible(35) == "BuzzWoof");
+    REQUIRE(isDivisible(70) == "BuzzWoof");
+}
