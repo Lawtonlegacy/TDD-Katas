@@ -14,5 +14,13 @@ std::string isDivisible(int number){
     else return "";
 }
 
+void FizzBuzzWoof(int input){
+    for(int i = 1; i <= input; ++i){
+        if(isDivisible(i) == ""){
+            std::cout << i << std::endl;
+        }
+        std::cout << isDivisible(i) << std::endl;
+    }
+}
 
 #endif
